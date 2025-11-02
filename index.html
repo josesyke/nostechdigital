@@ -3,120 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOSTECH Digital | Innovation Defines Us</title>
+    <title>NOSTECH Digital | Innovative Tech Solutions</title>
     <style>
-        /* Reset */
+        /* Reset and Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: "Poppins", Arial, sans-serif;
-            background-color: #0b0b0b;
-            color: #eaeaea;
+            background: linear-gradient(135deg, #f0f4f8, #d9e4ec);
+            color: #333;
             line-height: 1.6;
         }
 
         /* Header */
         header {
-            text-align: center;
-            background: #111;
-            padding: 40px 20px;
-            border-bottom: 2px solid #7a3df0;
-        }
-
-        header .logo {
-            width: 150px;
-            height: auto;
-            margin-bottom: 15px;
-        }
-
-        header h1 {
-            font-size: 2rem;
+            background: rgba(17, 17, 17, 0.95);
             color: #fff;
-            margin-bottom: 10px;
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        /* Logo */
+        .logo {
+            width: 80px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Title */
+        .brand-title {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #00bcd4;
+            text-transform: uppercase;
             letter-spacing: 1px;
         }
 
-        header p {
-            color: #b3b3b3;
-            font-style: italic;
-        }
-
         /* Navigation */
-        nav {
-            margin-top: 25px;
-        }
-
         nav a {
-            color: #ccc;
+            color: #ddd;
+            margin: 0 10px;
             text-decoration: none;
-            margin: 0 18px;
             font-weight: 500;
+            font-size: 0.9rem;
             transition: color 0.3s;
         }
-
         nav a:hover {
-            color: #7a3df0;
+            color: #00bcd4;
         }
 
-        /* Hero */
+        /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-                        url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
-            text-align: center;
-            padding: 120px 20px;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80') 
+                        no-repeat center center/cover;
             color: #fff;
-            margin-bottom: 15px;
+            text-align: center;
+            padding: 140px 20px;
+            background-attachment: fixed;
         }
-
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
         .hero p {
             font-size: 1.1rem;
-            color: #d8d8d8;
             margin-bottom: 30px;
         }
-
         .btn {
-            background: #7a3df0;
+            background: #00bcd4;
             color: #fff;
-            padding: 12px 28px;
+            padding: 12px 25px;
             border: none;
             border-radius: 6px;
             text-decoration: none;
             font-weight: bold;
             transition: background 0.3s;
         }
-
         .btn:hover {
-            background: #5c2ec0;
+            background: #0097a7;
         }
 
         /* Sections */
         section {
-            padding: 70px 20px;
-            max-width: 1100px;
+            padding: 60px 20px;
+            max-width: 1000px;
             margin: auto;
         }
-
         h2.section-title {
             text-align: center;
-            font-size: 1.9rem;
-            color: #fff;
+            color: #111;
             margin-bottom: 40px;
+            font-size: 1.8rem;
             position: relative;
         }
-
         h2.section-title::after {
             content: '';
-            width: 80px;
+            width: 60px;
             height: 3px;
-            background: #7a3df0;
+            background: #00bcd4;
             display: block;
             margin: 10px auto;
             border-radius: 2px;
@@ -127,70 +118,67 @@
             max-width: 800px;
             margin: 0 auto;
             text-align: center;
-            color: #bbb;
-            font-size: 1.05rem;
+            color: #555;
         }
 
         /* Services */
         .services {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
+            gap: 20px;
             text-align: center;
         }
-
         .service {
-            background: #1b1b1b;
-            padding: 35px 25px;
+            background: #fff;
+            padding: 30px 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
             transition: transform 0.3s;
         }
-
         .service:hover {
-            transform: translateY(-8px);
+            transform: translateY(-5px);
         }
-
         .service h3 {
-            color: #7a3df0;
+            color: #00bcd4;
             margin-bottom: 10px;
-        }
-
-        .service p {
-            color: #ccc;
         }
 
         /* Contact */
         .contact p {
             text-align: center;
-            color: #bbb;
+            color: #444;
             font-size: 1.1rem;
         }
-
         .contact a {
-            color: #7a3df0;
+            color: #00bcd4;
             text-decoration: none;
-            font-weight: 600;
         }
-
         .contact a:hover {
             text-decoration: underline;
         }
 
         /* Footer */
         footer {
-            background: #0a0a0a;
-            color: #777;
+            background: #111;
+            color: #ccc;
             text-align: center;
-            padding: 25px;
+            padding: 20px;
             margin-top: 40px;
             font-size: 0.9rem;
-            border-top: 1px solid #222;
         }
 
+        /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 1.9rem; }
-            nav a { margin: 0 10px; }
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo {
+                margin-bottom: 10px;
+            }
+            nav {
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
@@ -198,32 +186,30 @@
 
     <!-- Header -->
     <header>
-       <img src="img/logo.jpg" alt="NOSTECH Digital Logo" class="logo">
-
-        <h1>NOSTECH Digital</h1>
-        <p>Innovation Defines Us</p>
+        <div class="brand-title">🚀 NOSTECH Digital</div>
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
         </nav>
+        <img src="img/logo.jpg" alt="NOSTECH Digital Logo" class="logo">
     </header>
 
     <!-- Hero -->
     <section class="hero" id="home">
         <h1>Empowering Businesses Through Technology</h1>
-        <p>We create modern digital experiences that inspire growth and innovation.</p>
-        <a href="#services" class="btn">Explore Our Services</a>
+        <p>We build modern digital products and web experiences that drive results.</p>
+        <a href="#services" class="btn">Explore Services</a>
     </section>
 
     <!-- About -->
     <section class="about" id="about">
         <h2 class="section-title">About Us</h2>
         <p>
-            <strong>NOSTECH Digital</strong> is a forward-thinking tech company committed to innovation. 
-            We build websites, apps, and strategies that help brands succeed in a fast-evolving digital world. 
-            From concept to launch, we blend creativity with technology to shape meaningful digital experiences.
+            At <strong>NOSTECH Digital</strong>, we are passionate about delivering cutting-edge digital solutions.
+            Our mission is to help startups and businesses thrive through creative design, web development,
+            and smart technology integration.
         </p>
     </section>
 
@@ -233,15 +219,15 @@
         <div class="services">
             <div class="service">
                 <h3>💻 Web Development</h3>
-                <p>Modern, responsive websites that are optimized for performance and user engagement.</p>
+                <p>Responsive, high-performance websites built using modern technologies and best practices.</p>
             </div>
             <div class="service">
                 <h3>📱 App Design</h3>
-                <p>Intuitive mobile and desktop applications crafted for seamless user experiences.</p>
+                <p>Beautiful and intuitive mobile app interfaces for a seamless user experience.</p>
             </div>
             <div class="service">
                 <h3>⚙️ Digital Strategy</h3>
-                <p>We create digital growth plans that boost visibility, engagement, and ROI for your business.</p>
+                <p>Tailored digital transformation and branding strategies to enhance your online presence.</p>
             </div>
         </div>
     </section>
@@ -249,7 +235,7 @@
     <!-- Contact -->
     <section class="contact" id="contact">
         <h2 class="section-title">Get in Touch</h2>
-        <p>Have a project in mind? Let’s talk — <a href="mailto:anosikeanayojoseph@gmail.com">anosikeanayojoseph@gmail.com</a></p>
+        <p>Have a project in mind? Reach us at <a href="mailto:anosikeanayojoseph@gmail.com">anosikeanayojoseph@gmail.com</a></p>
     </section>
 
     <!-- Footer -->
